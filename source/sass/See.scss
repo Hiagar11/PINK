@@ -1,0 +1,101 @@
+.See {
+  overflow: hidden;
+}
+.See-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px;
+}
+.See-title {
+  color: white;
+}
+.See__download {
+  padding: 20px;
+  background-color: #1D2631;
+  display: flex;
+  flex-direction: column;
+}
+.See__download__icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+.See__slogan {
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  padding: 20px;
+}
+.See__button {
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .See {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .See-title {
+    font-size: 40px;
+    width: 50%;
+    margin-top: 60px;
+    font-weight: lighter;
+    line-height: 68px;
+  }
+  .See__image {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 90px;
+  }
+  .See__download {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+  }
+  .See__download__icons {
+    justify-content: center;
+  }
+  .See__download__icons > * {
+    margin-left: 30px;
+  }
+  .See__slogan {
+    padding-bottom: 80px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .See-title {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68px;
+  }
+  .See {
+    padding: 0 130px;
+    overflow: hidden;
+  }
+  .See-title {
+    width: 35%;
+  }
+  .See__download {
+    width: 35%;
+  }
+  .See__image {
+    top: 35px;
+    right: 0;
+    width: 1000px;
+    height: 600px;
+  }
+}

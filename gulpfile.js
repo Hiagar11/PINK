@@ -94,14 +94,14 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'expanded'}))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('build/css/'))
+        .pipe(gulp.dest('source/css/'))
         .pipe(browserSync.stream());
 });
 
 
 gulp.task('browserSync', function () {
     browserSync.init({
-        server: {baseDir: 'build'},
+        server: {baseDir: 'source'},
         notify: false
     });
 
